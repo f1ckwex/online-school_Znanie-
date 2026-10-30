@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Знание+ — онлайн-школа ОГЭ и ЕГЭ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Знание<span>+</span></a>
+      <nav class="nav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="teachers.html">Преподаватели</a>
+        <a href="about.html">О школе</a>
+        <a href="index.html#enroll" class="btn">Записаться</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      
+      <div class="hero__content reveal-right">
+        <h1 class="hero__title">Знание+</h1>
+        <p class="hero__text">Онлайн-школа подготовки к ОГЭ и ЕГЭ. Живые уроки, личный куратор и понятный план до экзамена.</p>
+        <a href="#enroll" class="btn">Записаться на курс</a>
+        <div class="hero__stats">
+          <div><b>1200+</b>учеников</div>
+          <div><b>86</b>средний балл</div>
+          <div><b>4</b>предмета</div>
+        </div>
+      </div>
+      <div class="hero__image reveal-left">
+        <div class="img-border">
+          <img src="img/istockphoto-1330520645-612x612.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="teachers">
+    <div class="container">
+      <h2 class="section__title reveal-left">Наши преподаватели</h2>
+      <p class="section__text reveal-right">Практикующие педагоги, которые знают, как устроены экзамены.</p>
+      <div class="grid">
+        <article class="card teacher reveal-left"><div class="teacher__avatar">А</div><h3>Анна Соколова</h3><p class="teacher__role">Математика, ЕГЭ профиль</p><p>10 лет опыта. Ученики сдают на 85+ баллов.</p></article>
+        <article class="card teacher reveal-right"><div class="teacher__avatar">Д</div><h3>Дмитрий Орлов</h3><p class="teacher__role">Русский язык, ОГЭ и ЕГЭ</p><p>Учит писать сочинения и не терять баллы на тестах.</p></article>
+        <article class="card teacher reveal-left"><div class="teacher__avatar">М</div><h3>Мария Лебедева</h3><p class="teacher__role">Информатика, ЕГЭ</p><p>Разбирает программирование с нуля до задач 25–27.</p></article>
+        <article class="card teacher reveal-right"><div class="teacher__avatar">И</div><h3>Игорь Фомин</h3><p class="teacher__role">Физика, ОГЭ и ЕГЭ</p><p>Объясняет сложное простыми примерами.</p></article>
+      </div>
+      <p style="margin-top:36px"><a href="teachers.html" class="btn">Все преподаватели</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <h2 class="section__title reveal-right">О чём наша школа</h2>
+      <p class="section__text reveal-left">Мы готовим девятиклассников к ОГЭ и одиннадцатиклассников к ЕГЭ.</p>
+      <div class="grid">
+        <article class="card reveal-left"><span class="card__tag">9 класс</span><h3>Подготовка к ОГЭ</h3><p>Математика, русский язык, информатика, физика. Разбор всех типов заданий и пробные экзамены.</p></article>
+        <article class="card reveal-right"><span class="card__tag">11 класс</span><h3>Подготовка к ЕГЭ</h3><p>Глубокая теория, сложные задачи второй части и тренировка на реальных вариантах.</p></article>
+        <article class="card reveal-left"><span class="card__tag">Для всех</span><h3>Куратор и поддержка</h3><p>Проверяем домашку, отвечаем на вопросы и следим за прогрессом каждого ученика.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" id="enroll">
+    <div class="container contacts">
+      <div class="reveal-left">
+        <h2 class="section__title">Контакты и запись</h2>
+        <p class="section__text">Оставьте заявку, и мы подберём группу и расскажем о бесплатном пробном уроке.</p>
+        <ul class="contacts__list">
+          <li><b>Телефон:</b> +7 (900) 000-00-00</li>
+          <li><b>Почта:</b> hello@znanie-plus.ru</li>
+          <li><b>Время работы:</b> ежедневно, 9:00–21:00</li>
+          <li><b>Формат:</b> онлайн, из любой точки</li>
+        </ul>
+      </div>
+      <form class="form reveal-right" id="enrollForm">
+        <h3>Записаться на курс</h3>
+        <input type="text" name="name" placeholder="Ваше имя">
+        <input type="tel" name="phone" placeholder="Телефон">
+        <select name="course">
+          <option>Подготовка к ОГЭ</option>
+          <option>Подготовка к ЕГЭ</option>
+        </select>
+        <button type="submit" class="btn">Отправить заявку</button>
+        <p class="form__message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">© 2026 Онлайн-школа «Знание+». Подготовка к ОГЭ и ЕГЭ.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
